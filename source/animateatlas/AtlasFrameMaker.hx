@@ -1,5 +1,5 @@
 package animateatlas;
-import flixel.util.FlxDestroyUtil;
+//import flixel.util.FlxDestroyUtil; //YOU MONSTER
 import openfl.geom.Rectangle;
 import flixel.math.FlxPoint;
 import flixel.math.FlxRect;
