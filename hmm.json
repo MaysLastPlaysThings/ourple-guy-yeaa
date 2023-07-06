@@ -14,18 +14,15 @@
 		},
 		{
 			"name":"flixel",
-			"type":"haxelib",
-			"version":"4.11.0"
+			"type":"haxelib"
 		},
 		{
 			"name":"flixel-addons",
-			"type":"haxelib",
-			"version":"2.11.0"
+			"type":"haxelib"
 		},
 		{
 			"name":"flixel-ui",
-			"type":"haxelib",
-			"version":"2.4.0"
+			"type":"haxelib"
 		},
 		{
 			"name":"linc_luajit",
