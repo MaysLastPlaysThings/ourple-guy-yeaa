@@ -19,11 +19,13 @@
 		},
 		{
 			"name":"flixel-addons",
-			"type":"haxelib"
+			"type":"haxelib",
+			"version":"2.11.0"
 		},
 		{
 			"name":"flixel-ui",
-			"type":"haxelib"
+			"type":"haxelib",
+			"version":"2.4.0"
 		},
 		{
 			"name":"linc_luajit",
