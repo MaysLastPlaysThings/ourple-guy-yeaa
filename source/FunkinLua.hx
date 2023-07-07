@@ -29,7 +29,7 @@ import openfl.utils.Assets;
 import flixel.math.FlxMath;
 import flixel.util.FlxSave;
 import flixel.addons.transition.FlxTransitionableState;
-#if MODS_ALLOWED
+#if MODS_ALLOWED || mobile
 import sys.FileSystem;
 import sys.io.File;
 #end
