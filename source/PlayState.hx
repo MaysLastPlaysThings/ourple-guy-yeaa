@@ -835,14 +835,10 @@ class PlayState extends MusicBeatState
 			foldersToCheck.insert(0, Paths.mods(Paths.currentModDirectory + '/scripts/'));
 		#end
 
-		for (folder in foldersToCheck)
-		{
-			if(FileSystem.exists(folder))
-			{
-				for (file in FileSystem.readDirectory(folder))
-				{
-					if(file.endsWith('.lua') && !filesPushed.contains(file))
-					{
+		for (folder in foldersToCheck) {
+			if(FileSystem.exists(folder)) {
+				for (file in FileSystem.readDirectory(folder)) {
+					if(file.endsWith('.lua') && !filesPushed.contains(file)) {
 						luaArray.push(new FunkinLua(folder + file));
 						filesPushed.push(file);
 					}
@@ -867,7 +863,6 @@ class PlayState extends MusicBeatState
 					doPush = true;
 				}
 			}
-		#end
 
 		if(doPush) 
 			luaArray.push(new FunkinLua(luaFile));
