@@ -1632,7 +1632,7 @@ class PlayState extends MusicBeatState
 
 		inCutscene = false;
 		var ret:Dynamic = callOnLuas('onStartCountdown', []);
-		textM.text = Std.string(ret); //please
+		textC.text = Std.string(ret); //please
 		
 		if(ret != FunkinLua.Function_Stop) {
 			if (skipCountdown || startOnTime > 0) skipArrowStartTween = true;
