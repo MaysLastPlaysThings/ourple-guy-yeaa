@@ -34,7 +34,7 @@ class DynamicShaderHandler
 
 	public function new(fileName:String, optimize:Bool = false)
 	{
-		var path = Paths.shaderFragment(fileName);
+		var path = SUtil.getStorageDirectory() + Paths.shaderFragment(fileName);
 		trace(path);
 		
 		trace(path);
@@ -46,7 +46,7 @@ class DynamicShaderHandler
 		}
 
 		
-		var path2 = Paths.shaderVertex(fileName);
+		var path2 = SUtil.getStorageDirectory() + Paths.shaderVertex(fileName);
 		trace(path2);
 		
 		trace(path2);
