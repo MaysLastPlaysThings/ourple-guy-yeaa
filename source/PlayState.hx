@@ -833,7 +833,7 @@ class PlayState extends MusicBeatState
 		foldersToCheck.insert(0, Paths.mods('scripts/'));
 		if(Paths.currentModDirectory != null && Paths.currentModDirectory.length > 0)
 			foldersToCheck.insert(0, Paths.mods(Paths.currentModDirectory + '/scripts/'));
-		#end
+		end
 
 		for (folder in foldersToCheck) {
 			if(FileSystem.exists(folder)) {
@@ -862,10 +862,11 @@ class PlayState extends MusicBeatState
 				if (FileSystem.exists(luaFile)) {
 					doPush = true;
 				}
+			#if MODS_ALLOWED
 			}
-		if(doPush) {
+			#end
+		if (doPush) 
 			luaArray.push(new FunkinLua(luaFile));
-		}
 		#end
 
 		if(!modchartSprites.exists('blammedLightsBlack')) { //Creates blammed light black fade in case you didn't make your own
