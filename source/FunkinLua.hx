@@ -28,7 +28,7 @@ import openfl.filters.BitmapFilter;
 import openfl.utils.Assets;
 import flixel.math.FlxMath;
 import flixel.util.FlxSave;
-import flixel.addons.transition.FlxTransitionableState;m
+import flixel.addons.transition.FlxTransitionableState;
 
 import sys.FileSystem;
 import sys.io.File;
