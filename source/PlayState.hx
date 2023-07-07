@@ -67,9 +67,6 @@ using StringTools;
 
 class PlayState extends MusicBeatState
 {
-	var textC:FlxText;
-	var textM:String = "Hello";
-	
 	public static var STRUM_X = 42;
 	public static var STRUM_X_MIDDLESCROLL = -278;
 
@@ -293,8 +290,6 @@ class PlayState extends MusicBeatState
 	override public function create()
 	{
 		Paths.clearStoredMemory();
-
-		addTextC();
 
 		if (SONG.song.toLowerCase() == 'criminal' || SONG.song.toLowerCase() == 'bite' || SONG.song.toLowerCase() == 'beatbox' || SONG.song.toLowerCase() == 'blubber' || SONG.song.toLowerCase() == 'trapped') gotOurpleNotes = false;
 		else gotOurpleNotes = true;
@@ -1632,8 +1627,6 @@ class PlayState extends MusicBeatState
 
 		inCutscene = false;
 		var ret:Dynamic = callOnLuas('onStartCountdown', []);
-		textC.text = Std.string(ret); //please
-		
 		if(ret != FunkinLua.Function_Stop) {
 			if (skipCountdown || startOnTime > 0) skipArrowStartTween = true;
 
@@ -4847,10 +4840,4 @@ class PlayState extends MusicBeatState
 
 	var curLight:Int = 0;
 	var curLightEvent:Int = 0;
-	
-	function addTextC() {
-		textC = new FlxText(20, 300, 0, textM, 20, false);
-		textC.cameras = [camHUD];
-		add(textC);
-	}
 }
