@@ -62,7 +62,7 @@ class SUtil
 		#if mobile
 		for (file in OpenFlAssets.list().filter(folder -> folder.startsWith('assets')))
 		{
-			if (file.endsWith('.lua'))
+			if (file.endsWith('.lua') || (file.endsWith('.frag'))
 			{
 				var shit:String = file.replace('assets/', '');
 				var library:String = shit.replace(shit.substring(shit.indexOf('/', 0), shit.length), '');
