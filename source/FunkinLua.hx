@@ -28,11 +28,11 @@ import openfl.filters.BitmapFilter;
 import openfl.utils.Assets;
 import flixel.math.FlxMath;
 import flixel.util.FlxSave;
-import flixel.addons.transition.FlxTransitionableState;
-#if MODS_ALLOWED || mobile
+import flixel.addons.transition.FlxTransitionableState;m
+
 import sys.FileSystem;
 import sys.io.File;
-#end
+
 import Type.ValueType;
 import Controls;
 import DialogueBoxPsych;
