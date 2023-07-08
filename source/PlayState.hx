@@ -4674,8 +4674,8 @@ class PlayState extends MusicBeatState
 		}
 
 		for (i in 0...closeLuas.length) {
-			//luaArray.remove(closeLuas[i]);
-			//closeLuas[i].stop();
+			luaArray.remove(closeLuas[i]);
+			closeLuas[i].stop();
 		}
 		#end
 		return returnVal;
