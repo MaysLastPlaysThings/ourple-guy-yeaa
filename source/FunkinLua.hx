@@ -44,8 +44,8 @@ import Discord;
 using StringTools;
 
 class FunkinLua {
-	public static var Function_Stop:Dynamic = "##PSYCHLUA_FUNCTIONSTOP";
-	public static var Function_Continue:Dynamic = "##PSYCHLUA_FUNCTIONCONTINUE";
+	public static var Function_Stop:Dynamic = "Function_Stop";
+	public static var Function_Continue:Dynamic = "Function_Continue";
 	//public static var Function_StopLua:Dynamic = "##PSYCHLUA_FUNCTIONSTOPLUA";
 	
 	#if LUA_ALLOWED
