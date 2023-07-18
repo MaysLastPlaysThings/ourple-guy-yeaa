@@ -46,7 +46,7 @@ using StringTools;
 class FunkinLua {
 	public static var Function_Stop:Dynamic = 1;
 	public static var Function_Continue:Dynamic = 0;
-	public static var Function_StopLua:Dynamic = 2;;
+	public static var Function_StopLua:Dynamic = 2;
 	
 	#if LUA_ALLOWED
 	public var lua:State = null;
