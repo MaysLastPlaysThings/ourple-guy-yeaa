@@ -32,7 +32,7 @@
 		{
 			"name":"linc_luajit",
 			"type":"git",
-			"url":"https://github.com/Sirox228/linc_luajit.git"
+			"url":"https://github.com/Aly-Ant0/linc_luajit.git"
 		},
 		{
 			"name":"discord_rpc",
